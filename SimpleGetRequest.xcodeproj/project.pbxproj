@@ -39,6 +39,7 @@
 		FFE11F5427C04C680044540A /* UserDefaults+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Ext.swift"; sourceTree = "<group>"; };
 		FFE11F5827C12BD30044540A /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		FFE11F5B27C13A4B0044540A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		FFE11F5D27C13D240044540A /* .gitignore.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = .gitignore.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				FFE11F5827C12BD30044540A /* Readme.md */,
+				FFE11F5D27C13D240044540A /* .gitignore.md */,
 				FFE11F0727BFE0DD0044540A /* SimpleGetRequest */,
 				FFE11F0627BFE0DD0044540A /* Products */,
 			);

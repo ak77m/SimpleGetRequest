@@ -9,8 +9,6 @@ import UIKit
 
 class ImageViewController: UIViewController {
 
-    var result = RequestManager()
-    
     @IBOutlet weak var dateTimeLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     
@@ -22,7 +20,7 @@ class ImageViewController: UIViewController {
         
         let formatter = DateFormatter()
         formatter.dateFormat = "MM/dd/yyyy hh:mm:ss"
-        dateTimeLabel.text = formatter.string(from: info?.date ?? Date())
+        dateTimeLabel.text = info?.date?.formattedString()
         imageView.fetchImage(info?.url ?? "")
     }
 
