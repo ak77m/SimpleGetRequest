@@ -19,7 +19,8 @@
 		FFE11F2527BFEDA20044540A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE11F2427BFEDA20044540A /* NetworkManager.swift */; };
 		FFE11F2827BFF5C90044540A /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE11F2727BFF5C90044540A /* Date+Ext.swift */; };
 		FFE11F5527C04C680044540A /* UserDefaults+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE11F5427C04C680044540A /* UserDefaults+Ext.swift */; };
-		FFE11F5C27C13A4B0044540A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE11F5B27C13A4B0044540A /* TableViewCell.swift */; };
+		FFE11F6227C23C1B0044540A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE11F6027C23C1B0044540A /* TableViewCell.swift */; };
+		FFE11F6327C23C1B0044540A /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFE11F6127C23C1B0044540A /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +39,9 @@
 		FFE11F2727BFF5C90044540A /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		FFE11F5427C04C680044540A /* UserDefaults+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Ext.swift"; sourceTree = "<group>"; };
 		FFE11F5827C12BD30044540A /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
-		FFE11F5B27C13A4B0044540A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		FFE11F5D27C13D240044540A /* .gitignore.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = .gitignore.md; sourceTree = "<group>"; };
+		FFE11F6027C23C1B0044540A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		FFE11F6127C23C1B0044540A /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,9 +92,10 @@
 			isa = PBXGroup;
 			children = (
 				FFE11F0C27BFE0DD0044540A /* ViewController.swift */,
+				FFE11F6127C23C1B0044540A /* TableViewCell.xib */,
+				FFE11F6027C23C1B0044540A /* TableViewCell.swift */,
 				FFE11F1C27BFE38C0044540A /* ImageViewController.swift */,
 				FFE11F0E27BFE0DD0044540A /* Main.storyboard */,
-				FFE11F5B27C13A4B0044540A /* TableViewCell.swift */,
 				FFE11F1327BFE0DE0044540A /* LaunchScreen.storyboard */,
 			);
 			name = ViewControllers;
@@ -184,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFE11F1527BFE0DE0044540A /* LaunchScreen.storyboard in Resources */,
+				FFE11F6327C23C1B0044540A /* TableViewCell.xib in Resources */,
 				FFE11F1227BFE0DE0044540A /* Assets.xcassets in Resources */,
 				FFE11F1027BFE0DD0044540A /* Main.storyboard in Resources */,
 			);
@@ -201,7 +205,7 @@
 				FFE11F1D27BFE38C0044540A /* ImageViewController.swift in Sources */,
 				FFE11F2827BFF5C90044540A /* Date+Ext.swift in Sources */,
 				FFE11F2527BFEDA20044540A /* NetworkManager.swift in Sources */,
-				FFE11F5C27C13A4B0044540A /* TableViewCell.swift in Sources */,
+				FFE11F6227C23C1B0044540A /* TableViewCell.swift in Sources */,
 				FFE11F0B27BFE0DD0044540A /* SceneDelegate.swift in Sources */,
 				FFE11F2027BFEBAB0044540A /* JsonStruct.swift in Sources */,
 				FFE11F5527C04C680044540A /* UserDefaults+Ext.swift in Sources */,

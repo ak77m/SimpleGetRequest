@@ -7,10 +7,10 @@
 
 import UIKit
 
-class ImageViewController: UIViewController {
+final class ImageViewController: UIViewController {
 
-    @IBOutlet weak var dateTimeLabel: UILabel!
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak private var dateTimeLabel: UILabel!
+    @IBOutlet weak private var imageView: UIImageView!
     
     var info:JsonStruct?
     

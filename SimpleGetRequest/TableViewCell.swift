@@ -2,12 +2,15 @@
 //  TableViewCell.swift
 //  SimpleGetRequest
 //
-//  Created by ak77m on 19.02.2022.
+//  Created by ak77m on 20.02.2022.
 //
 
 import UIKit
 
-class TableViewCell: UITableViewCell {
+final class TableViewCell: UITableViewCell {
+    @IBOutlet weak var picImageView: UIImageView!
+    @IBOutlet weak var idLabel: UILabel!
+    @IBOutlet weak var textBodyLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,5 +22,5 @@ class TableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
 }

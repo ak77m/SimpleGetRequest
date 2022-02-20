@@ -11,7 +11,6 @@ import UIKit
 final class RequestManager {
    
     static let shared = RequestManager()
-    
     private let jsonRequest = JsonRequest()
     
     let url = "https://jsonplaceholder.typicode.com/photos"
@@ -24,6 +23,5 @@ final class RequestManager {
                 UserDefaults.standard.setStructArray(self.myData, forKey: "cache")
             }
         }
-        
     }
 }

@@ -7,10 +7,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
+    
+    @IBOutlet weak private var tableView: UITableView!
     
     @IBAction func clearUserDefaults(_ sender: Any) {
         UserDefaults.standard.removeObject(forKey: "cache")
+        
+        let alert = UIAlertController(title: "Внимание", message: "Кеш очищен", preferredStyle: .alert)
+        let action = UIAlertAction(title: "< Back", style: .default)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+        
+        reload()
         
     }
     
@@ -19,32 +28,32 @@ class ViewController: UIViewController {
         reload()
     }
    
-    @IBOutlet weak var tableView: UITableView!
+ 
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        RequestManager.shared.standardRequest()
+        
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "CustomCell")
         
-        
+        RequestManager.shared.standardRequest()
         
     }
     
     func reload() {
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-        }
+        DispatchQueue.main.async { self.tableView.reloadData() }
     }
     
 }
 extension ViewController:UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath)
-        cell.imageView?.fetchImage(RequestManager.shared.myData[indexPath.row].url)
-        cell.textLabel?.text = RequestManager.shared.myData[indexPath.row].title
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath) as! TableViewCell
+        cell.picImageView.fetchImage(RequestManager.shared.myData[indexPath.row].url)
+        cell.idLabel?.text = String(RequestManager.shared.myData[indexPath.row].id)
+        cell.textBodyLabel?.text = RequestManager.shared.myData[indexPath.row].title
         return cell
     }
     
